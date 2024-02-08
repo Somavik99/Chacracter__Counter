@@ -7,7 +7,7 @@ TextArea.addEventListener("keyup", function () {
 });
 
 function TextCharacterUpdate() {
-  TotalCount.innerText = TextArea.value.length;
-  WrittenText.innerText =
+  TotalCount.innerText =
     TextArea.getAttribute("maxlength") - TextArea.value.length;
+  WrittenText.innerText = TextArea.value.length;
 }
